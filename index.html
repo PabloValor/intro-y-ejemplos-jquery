@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro y Ejemplos | jQuery</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	<link rel="shortcut icon" href="favicon.ico"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+	<div class="container">
+		<!-- botón volver -->
+		<div class="row">
+			<div class="col-md-offset-8 col-md-4">
+				<div class="scrollToTop">
+					<a href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+				</div>
+			</div>
+		</div>
+		<!-- /botón de volver -->
+		<header>
+			<div class="row">
+				<div class="col-md-7">
+					<h1 class="text-center">Javascript, jQuery y<br/>otras hiervas</h1>
+				</div>
+				<div class="col-md-5">
+					<div class="box">
+						<img src="images/jquery-logo.png" class="img-responsive center-block"/>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-left"><del>Página web</del> tutorial creado por <a href="mailto:pablovalor89@gmail.com" title="mandá un e-mail" target="_blank">Pablo Valor</a> | Octubre 2014 | Taller web UNLaM</h2>
+				</div>
+			</div>
+		</header>
+
+		<div class="panel panel-default orange">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">¿Qué es Javascript?</h3>
+			</div>
+			<div class="panel-body">
+				<p>JavaScript es un lenguaje de script que fue diseñado para ser usado <strong>dentro de un navegador web</strong>. Normalmente, JavaScript se usa para las interacciones con la interfaz. Las presentaciones de imágenes y otros componentes interactivos están hechos frecuentemente con JavaScript.</p>
+				<p>JavaScript tiene también muchos otros usos. Si está acostumbrado a utilizar el cliente de correo de Google, Gmail, ha experimentado en primera mano la potencia de JavaScript. Muchas de las características y funcionalidades adicionales que hacen a Gmail una solución de correo tan popular están creadas usando JavaScript.</p>
+				<p>Los usos de JavaScript sin embargo, no paran aquí. JavaScript también se usa para la <strong>programación del lado del servidor</strong>, para el desarrollo de juegos, e incluso para crear aplicaciones de escritorio.</p>
+				<p>Hace años, JavaScript era popular pero los diseñadores web no estaban plenamente convencidos de usarlo solamente porque cada navegador web mostraría el contenido JavaScript de forma diferente. Los nuevos estándares ahora obligan a todos los navegadores web a implementar JavaScript uniformemente; ahorrando a los desarrolladores tiempo y frustración intentando depurar código para un cliente específico de navegador web.</p>
+				<p>El contenido dinámico es el tema más de moda en desarrollo web ahora mismo. El contenido dinámico se refiere a <strong>contenido que cambia constantemente</strong> y se adapta a usuarios específicos cuando es posible. Por ejemplo, JavaScript se puede usar para saber si un visitante web está usando un ordenador o un dispositivo móvil antes de decidir si mostrar o no la versión móvil del sitio web. Son estas pequeñas cosas, las que de forma discreta, crean verdadero valor al usar JavaScript para crear páginas web dinámicas.</p>
+			</div>
+		</div>
+
+		<div class="panel panel-default orange hideme">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">¿Qué es jQuery?</h3>
+			</div>
+			<div class="panel-body">
+				<p>Antes de que jQuery fuera desarrollado, los desarrolladores web creaban sus propios frameworks a medida en JavaScript. Esto les permitía solucionar errores específicos sin perder tiempo depurando funcionalidades comunes. Esto condujo a grupos de desarrolladores a <strong>crear librerías de JavaScript</strong> que eran de código abierto y libres de usar.</p>
+
+				<blockquote><small>Write less, do more...</small></blockquote>
+
+				<p><strong>JQuery es simplemente una librería</strong> específica de código JavaScript. Existen muchas otras librerías JavaScript como <strong>MooTools</strong>, pero jQuery se ha convertido en la más popular debido a su <strong>facilidad de uso</strong> y su gran potencia.</p>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<div class="thumbnail">
+							<img src="images/reverendo-alegria.jpeg" class="img-responsive center-block" alt="Reverendo Alegría">
+							<div class="caption">
+									<small><em>"Todos dicen jQuery esto jQuery lo otro. Pero nadie dice vamos a rezar por eso vamos a rezar por lo otro."</em></small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p>Mientras que muchos desarrolladores web <strong>confunden JavaScript y jQuery</strong> como dos lenguajes de programación distintos, es importante que se de cuenta que <strong>ambos son JavaScript</strong>. La diferencia es que jQuery ha sido optimizado para realizar muchas funciones de script frecuentes y lo hace a la vez que utiliza menos líneas de código.</p>		
+			</div>
+		</div>
+
+		<div class="panel panel-default meme hideme">
+			<div class="panel-body">
+				<h3 class="text-center">Entonces ¿Qué debería usar?</h3>
+				<img src="images/chan-meme.jpg" alt="chan meme" title="Qué quilombo es esto!" class="img-responsive center-block">
+			</div>
+		</div>
+
+		<div class="alert alert-danger hideme" role="alert">
+			<h4 class="text-center">Antes de continuar, ¿De dónde puedo descargar Javascript y jQuery? <span class="glyphicon glyphicon-pushpin"></span></h4>
+			<br/>
+			<h4>Javascript de.. ¡Ningún lado!</h4>
+			<p>Todos los navegadores modernos traen consigo un motor que interpreta, compila y ejecuta Javascript. En el caso de Chrome, implementa el motor V8.</p>
+			<p>El motor Javascript V8 está programado en C++ y puede ser usado tanto como una aplicación independiente como emplearla en otros proyectos ya que es de código abierto y gratuito.</p>
+			<hr/>
+			<h4>jQuery</h4>
+			<p>jQuery es una librería de Javascript creada por John Resig y puede ser descargada de forma gratuita desde <a href="http://jquery.com/download/" target="_blank">jquery.com <span class="glyphicon glyphicon-link"></span></a></p>
+			<p>Si no la queres bajar podes usar la que yo descargué para poder hacer los ejemplos, podes encontrar la version minificada en el directorio <code>js/vendor/jquery.min.js</code></p>
+		</div>
+
+		<div class="panel panel-default oliva hideme">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">¿Entonces Cuál Debería Usar?</h3>
+			</div>
+			<div class="panel-body">
+				<p>Los desarrolladores pasan mucho tiempo discutiendo si JavaScript o jQuery es el adecuado en  una situación concreta. La verdad es que no existe la respuesta correcta. Cualquiera de las opciones se puede usar para crear exactamente los mismo efectos, pero a menudo jQuery puede hacerlo <strong>con menos líneas de código</strong>.</p>
+				<p>Como regla general, jQuery es suficiente para la mayoría de los proyectos de desarrollo web. Habrá algunos proyectos que requieran el tradicional Javascript; sin embargo, éstos son pocos y poco frecuentes. Aunque jQuery quizás sea la mejor opción en la mayoría de los escenarios, como desarrollador web principiante debería tomarse un tiempo para <strong>aprender ambos JavaScript y jQuery</strong>.</p>
+				<p>Aunque usar JavaScript exclusivamente puede ralentizar la terminación de un proyecto significativamente, es importante darse cuenta de <strong>cómo funciona JavaScript</strong> y cómo afecta al <strong>Modelo de Objetos del Documento (DOM)</strong>.</p>
+				<p>Acordate que la mayor diferencia entre jQuery y JavaScript es que jQuery ha sido optimizado para trabajar con una variedad de navegadores automáticamente. Desafortunadamente, JavaScript todavía tiene algunos problemas con la compatibilidad entre navegadores debido a las pobres prácticas de implementación de JavaScript por parte de los desarrolladores de navegadores web.</p>
+				<p>Para ver estas diferencias en acción, presta atención al siguiente ejemplo que está diseñado para <strong> cambiar el color del fondo de la etiqueta body usando jQuery y JavaScript respectivamente:</strong></p>
+				<br/>
+				<h4>Con jQuery:</h4>
+				<pre>
+					$(‘body’).css(‘background’, ‘#ccc’);
+				</pre>
+				<br/>
+				<h4>Lo mismo pero usando solo Javascript:</h4>
+				<pre>
+					function cambiarColorFondo(color) {
+							document.body.style.background = color;
+						}
+
+					document.addEventListener('ready',cambiarColorFondo('red'));
+				</pre>
+				<br/>
+				<p>¿Puede ver cómo en un proyecto desarrollo web grande y complejo puede tener más sentido usar jQuery? Una sencilla línea de código consigue lo que le llevaría cuatro líneas de código para conseguirlo en JavaScript y esto no tiene ni siquiera en cuenta el tiempo extra que pasaría depurando este pequeño trozo de código en los navegadores web más populares como Internet Explorer, Firefox, Chrome, y Safari.</p>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Algunos ejemplos</h3>
+			</div>
+			<div class="panel-body">
+				<p>A continuación, algunos efectos interesantes que se pueden hacer con jQuery.</p>
+				<small> <del>Como decía Tusam, esto puede fallar.</del> </small>
+				<br/>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="text-left">método <code>.fadeIn()</code></h3>
+						<hr/>
+						<p>Este método es usado para <ins>mostrar</ins> elementos ocultos con una animación/transición suave.</p>
+						<p>Demostración fadeIn() con diferentes parámetros (mirá el archivo main.js para saber como esta hecho)</p>
+						<br/>
+						<div class="row fadein">
+							<div class="col-md-12">
+								<div class="box text-center">
+									<button id="fadein" class="btn btn-primary">Click para disparar el evento</button>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="curly" src="images/curly.jpg" class="img-responsive center-block img-circle" alt="curly foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="larry" src="images/larry.jpg" class="img-responsive center-block img-circle" alt="larry foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="moe" src="images/moe.jpg" class="img-responsive center-block img-circle" alt="moe foto"/>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="text-left">método <code>.fadeOut()</code></h3>
+						<hr/>
+						<p>A diferencia de fadeIn, este método <ins>oculta</ins> los elementos con una transición.</p>
+						<p>(mirá el archivo main.js para saber como esta hecho)</p>
+						<br/>
+						<div class="row fadeout">
+							<div class="col-md-12">
+								<div class="box text-center">
+									<button id="fadeout" class="btn btn-primary">Click para disparar el evento</button>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="curly2" src="images/curly.jpg" class="img-responsive center-block img-circle" alt="curly foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="larry2" src="images/larry.jpg" class="img-responsive center-block img-circle" alt="larry foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="moe2" src="images/moe.jpg" class="img-responsive center-block img-circle" alt="moe foto"/>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="text-left">método <code>.slideUp()</code></h3>
+						<hr/>
+						<p>Este método <ins>oculta</ins> los elementos selecionados con un efecto <em>slide</em>.</p>
+						<p>(mirá el archivo main.js para saber como esta hecho)</p>
+						<br/>
+						<div class="row slideup">
+							<div class="col-md-12">
+								<div class="box text-center">
+									<button id="slideup" class="btn btn-primary">Click para disparar el evento</button>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="curly3" src="images/curly.jpg" class="img-responsive center-block img-circle" alt="curly foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="larry3" src="images/larry.jpg" class="img-responsive center-block img-circle" alt="larry foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="moe3" src="images/moe.jpg" class="img-responsive center-block img-circle" alt="moe foto"/>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="text-left">método <code>.slideDown()</code></h3>
+						<hr/>
+						<p>Efecto inverso al de <code>.slideUp()</code></p>
+						<p>(mirá el archivo main.js para saber como esta hecho)</p>
+						<br/>
+						<div class="row slidedown">
+							<div class="col-md-12">
+								<div class="box text-center">
+									<button id="slidedown" class="btn btn-primary">Click para disparar el evento</button>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="curly4" src="images/curly.jpg" class="img-responsive center-block img-circle" alt="curly foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="larry4" src="images/larry.jpg" class="img-responsive center-block img-circle" alt="larry foto"/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="box">
+									<img id="moe4" src="images/moe.jpg" class="img-responsive center-block img-circle" alt="moe foto"/>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="text-left">método <code>.animate()</code></h3>
+						<hr/>
+						<p>Este método permite crear una animación <strong>customizada</strong> usando un set de estilos CSS.</p>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	
+	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
